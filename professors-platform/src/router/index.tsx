@@ -4,6 +4,7 @@ import { RequireAuth } from "@/components/layout/RequireAuth"
 import Dashboard from "@/features/dashboard/Dashboard"
 import Login from "@/features/auth/Login"
 import RegisterPage from "@/features/auth/RegisterPage"
+import StudentRegister from "@/features/auth/StudentRegister"
 
 export const router = createBrowserRouter([
     {
@@ -28,5 +29,9 @@ export const router = createBrowserRouter([
     {
         path: "/register",
         element: <RegisterPage />,
+    },
+    {
+        path: "/register/student",
+        element: <StudentRegister />,
     },
 ])
